@@ -2,12 +2,14 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.traccar.client">
+    package="com.chungauto.tracking">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -22,7 +24,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:name=".MainApplication"
+        android:name="com.chungauto.tracking.MainApplication"
         tools:ignore="GoogleAppIndexingWarning">
 
         <meta-data
@@ -30,12 +32,12 @@
             android:value="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.chungauto.tracking.MainActivity"
             android:launchMode="singleTask" />
 
         <activity-alias
             android:name=".Launcher"
-            android:targetActivity=".MainActivity">
+            android:targetActivity="com.chungauto.tracking.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -45,10 +47,10 @@
                 android:resource="@xml/shortcuts" />
         </activity-alias>
 
-        <activity android:name=".StatusActivity"/>
+        <activity android:name="com.chungauto.tracking.StatusActivity"/>
 
         <activity
-            android:name=".ShortcutActivity"
+            android:name="com.chungauto.tracking.ShortcutActivity"
             android:label="@string/menu_shortcuts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,13 +59,13 @@
         </activity>
 
         <service
-            android:name=".TrackingService"
+            android:name="com.chungauto.tracking.TrackingService"
             android:foregroundServiceType="location" />
 
         <service
-            android:name=".TrackingService$HideNotificationService" />
+            android:name="com.chungauto.tracking.TrackingService$HideNotificationService" />
 
-        <receiver android:name=".AutostartReceiver">
+        <receiver android:name="com.chungauto.tracking.AutostartReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>

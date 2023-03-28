@@ -37,12 +37,12 @@
         tools:isPreferenceVisible="true" />
 
     <EditTextPreference
-        android:defaultValue="20"
+        android:defaultValue="5"
         android:inputType="number"
         android:key="interval"
         android:summary="@string/settings_interval_summary"
         android:title="@string/settings_interval_title"
-        app:isPreferenceVisible="false"
+        app:isPreferenceVisible="true"
         tools:isPreferenceVisible="true" />
 
     <EditTextPreference

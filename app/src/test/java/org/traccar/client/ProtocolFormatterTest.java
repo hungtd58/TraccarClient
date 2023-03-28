@@ -1,5 +1,5 @@
 
-package org.traccar.client;
+package com.chungauto.tracking;
 
 import android.location.Location;
 import android.os.Build;
@@ -12,6 +12,9 @@ import org.robolectric.annotation.Config;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
+
+import com.chungauto.tracking.Position;
+import com.chungauto.tracking.ProtocolFormatter;
 
 @Config(sdk = Build.VERSION_CODES.P)
 @RunWith(RobolectricTestRunner.class)

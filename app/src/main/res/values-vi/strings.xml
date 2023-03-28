@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Máy khách Traccar</string>
-  <string name="app_logo">Traccar</string>
+  <string name="app_name">Oledpro-Tracking</string>
+  <string name="app_logo">Oledpro-Tracking</string>
   <string name="settings_id_title">Định danh thiết bị</string>
   <string name="settings_url_title">Đường dẫn server</string>
   <string name="settings_url_summary">Đường link server giám sát</string>

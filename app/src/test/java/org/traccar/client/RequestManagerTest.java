@@ -1,5 +1,5 @@
 
-package org.traccar.client;
+package com.chungauto.tracking;
 
 import android.os.Build;
 
@@ -10,6 +10,8 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import static org.junit.Assert.assertTrue;
+
+import com.chungauto.tracking.RequestManager;
 
 @Config(sdk = Build.VERSION_CODES.P)
 @RunWith(RobolectricTestRunner.class)

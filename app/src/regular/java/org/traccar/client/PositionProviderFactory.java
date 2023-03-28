@@ -13,9 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.traccar.client;
+package com.chungauto.tracking;
 
 import android.content.Context;
+
+import com.chungauto.tracking.AndroidPositionProvider;
+import com.chungauto.tracking.PositionProvider;
 
 public class PositionProviderFactory {
 
